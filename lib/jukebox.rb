@@ -37,15 +37,15 @@ def play(songs)
   songs_down = []
   songs.each do |i|
     songs_down << i.downcase
-      puts "Please enter a song name or number:"
-      song_choice = gets.downcase.chomp
-      if (1..9).to_a.include?(song_choice.to_i)
-        puts "Playing #{songs[song_choice.to_i - 1]}"
-      elsif songs_down.include?(song_choice)
-        puts "Playing #{song_choice}"
-      else 
-        puts "Invalid input, please try again"
-    end 
+  end
+  puts "Please enter a song name or number:"
+  song_choice = gets.downcase.chomp
+  if (1..9).to_a.include?(song_choice.to_i)
+    puts "Playing #{songs[song_choice.to_i - 1]}"
+  elsif songs_down.include?(song_choice)
+    puts "Playing #{song_choice}"
+  else 
+    puts "Invalid input, please try again"
   end 
 end
 
