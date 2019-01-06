@@ -37,7 +37,7 @@ def play(songs)
   songs_down = []
   songs.each do |i|
     songs_down << i.downcase
-  end
+  end 
   puts "Please enter a song name or number:"
   song_choice = gets.downcase.chomp
   if (1..9).to_a.include?(song_choice.to_i)
